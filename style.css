@@ -1,0 +1,204 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*--DEBUT du bloc CSS qui contient les éléments header et footer pour toutes les pages HTML--*/
+.entete-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0  3% 0 3%;
+   
+}
+.entete-cv,.entete-projet{
+    border-right: .1rem solid black;
+    padding-right: .8rem;
+}
+.entete-nav, a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 105%;
+}
+
+.pied{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 1px solid ;
+    width: 85%;
+    margin-left: 7%;
+    align-items: center;
+}
+.icone-1{
+    width: 30px;
+}/*--FIN du bloc CSS qui contient les éléments header et footer pour toutes les pages HTML--*/
+
+ 
+
+/*--La partie CSS qui sera appliquée au fichier page d'accueil.html--*/
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
+    margin: 3em 0 2em 0;
+}
+.img{
+    width: 350px;
+    height:400px;
+    clip-path: circle();
+}
+
+.principal-texte{
+    width: 500px;
+    margin: 3px 0 3px 0;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.button-btn1, .button-btn2,.button-btn3{
+    display: block;
+    width: 105px;
+    height: 105px;
+    background-color: rgb(255, 8, 8);
+    clip-path: circle();
+    padding: 40px 20px 20px 30px;
+    margin: 5px; 
+    font-weight: bold;
+}
+
+.button-btn2{
+    background: rgb(255, 217, 0);
+}
+
+.button-btn3{
+    background-color: rgb(7, 7, 248);
+}
+.button-btn1:hover{
+    background-color: rgb(126, 33, 33);
+}
+.button-btn2:hover{
+    background-color: rgb(166, 168, 59);
+}
+.button-btn3:hover{
+    background-color: rgb(22, 22, 133);
+}
+
+
+/*--La partie CSS qui sera appliquée au fichier CV.html--*/
+.structure{
+    width: 75%;
+    position: relative;
+    left: 10%;
+    margin: 6% 0 0 0;
+}
+h1{
+    width: 35%;
+}
+.titre2{
+    margin: 0% 0 8% 0;
+    border-top: .1rem solid black;
+}
+.sous-titre{
+    width: 35%;
+    margin: 1% 0 4% 0;
+}
+h5{
+    width: 45%;
+    margin-bottom: 0.5%;
+}
+.petitpara{
+    margin-top:0;
+    margin-bottom: 3%;
+}
+.date1, .date2,.date3{
+    position: absolute;
+    top: 10%;
+    left: 87%;
+}
+.date2{
+    top: 25%;
+    left: 85%;
+}
+.date3{
+    top: 50%;
+    left: 84%;
+}
+
+
+/*--La partie CSS qui sera appliquée au fichier contact.html--*/
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
+    margin: 4% 0 7% 0;
+}
+
+.form1{
+    display: flex;
+    gap: 10%;
+    margin: 15% 2% 2% 2%;
+}
+
+.first-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.last-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+}
+
+.form2{
+    margin-bottom: 9%;
+}
+
+#msg{
+    height: 5rem;
+}
+
+#btn{
+    background-color: green;
+    width: 40%;
+    clip-path: circle();
+    border: none;
+    font-weight: bold;
+}
+
+/*--La quantrième parti CSS qui sera appliquée au fichier projets.htlm */
+.main{
+    margin-bottom: 5%;
+    padding: 5em;
+}
+.ContenuDiv1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10%;
+    margin-bottom: 8px;   
+}
+#imageParfum{
+    width: 350px;
+    
+    margin-top: 2rem ;
+}
+
+p{
+    width: 55%;
+}
+
