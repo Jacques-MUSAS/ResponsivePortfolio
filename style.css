@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,12 +10,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2%;
     padding: 0  3% 0 3%;
    
 }
 .entete-cv,.entete-projet{
     border-right: .1rem solid black;
     padding-right: .8rem;
+   
 }
 .entete-nav, a{
     list-style: none;
@@ -25,7 +28,7 @@
 
 .pied{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     border-top: 1px solid ;
     width: 85%;
@@ -43,7 +46,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 55px;
     margin: 3em 0 2em 0;
 }
 .img{
@@ -53,14 +55,32 @@
 }
 
 .principal-texte{
+    display: inline-block;
+    align-items: center;
     width: 500px;
     margin: 3px 0 3px 0;
 }
+ .texte{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 2vw 0 0 4vw;
+ }
+
+ main h3{
+    width: 55%;
+ }
+
+ main .paragraphe{
+    width: 100%;
+    font-size: 2.5vh;
+    text-align: justify;
+ }
 
 .button{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;    
 }
 
 .button-btn1, .button-btn2,.button-btn3{
@@ -72,9 +92,14 @@
     padding: 40px 20px 20px 30px;
     margin: 5px; 
     font-weight: bold;
+    text-align: center;
 }
 
+.button-btn1{
+    
+}
 .button-btn2{
+    
     background: rgb(255, 217, 0);
 }
 
@@ -102,6 +127,7 @@
 h1{
     width: 35%;
 }
+
 .titre2{
     margin: 0% 0 8% 0;
     border-top: .1rem solid black;
