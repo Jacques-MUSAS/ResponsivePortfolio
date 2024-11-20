@@ -149,59 +149,11 @@ h5{
     left: 84%;
 }
 
-
-/*--La partie CSS qui sera appliquée au fichier contact.html--*/
-.container{
+.forme1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
 }
 
-.formulaire{
-    display: flex;
-    flex-wrap: wrap;
-}
-.form1{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    width: 40vw;
-    margin: 15% 2% 2% 2%;
-}
-
-.first-name{
-    display: flex;
-    flex-direction: column;
-}
-
-.last-name{
-    display: flex;
-    flex-direction: column;
-}
-
-.message{
-    display: flex;
-    flex-direction: column;
-}
-
-.form2{
-    margin-bottom: 9%;
-}
-
-.msg{
-    height: 5rem;
-}
-
-.btn{
-    background-color: green;
-    width: 40%;
-    clip-path: circle();
-    border: none;
-    font-weight: bold;
-}
-
-/*--La quantrième parti CSS qui sera appliquée au fichier projets.htlm */
+/*--La parti CSS qui sera appliquée au fichier projets.htlm */
 .main{
     display: flex;
     flex-direction: column;
@@ -232,5 +184,64 @@ main h1{
 
 main h4{
     margin-bottom: 2%;
+}
+
+/*--La partie CSS qui sera appliquée au fichier contact.html--*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding : 5% 0 2% 0;
+    margin: 4% 0 12% 2%;
+}
+
+.Contact-telephone{
+    margin: 1.2rem 0 2rem 0 ;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.form1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 2rem; 
+}
+.form2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.last-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+.btn{
+    background-color: greenyellow;
+    width: 8rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 8%;
+}
+
+.msg{
+    width: 120%;
+    height: auto;
 }
 
