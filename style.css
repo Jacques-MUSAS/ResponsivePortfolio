@@ -92,11 +92,10 @@
     padding: 40px 20px 20px 30px;
     margin: 5px; 
     font-weight: bold;
-    text-align: center;
 }
 
 .button-btn1{
-    
+    text-align: center;
 }
 .button-btn2{
     
@@ -106,26 +105,17 @@
 .button-btn3{
     background-color: rgb(7, 7, 248);
 }
-.button-btn1:hover{
-    background-color: rgb(126, 33, 33);
-}
-.button-btn2:hover{
-    background-color: rgb(166, 168, 59);
-}
-.button-btn3:hover{
-    background-color: rgb(22, 22, 133);
-}
-
 
 /*--La partie CSS qui sera appliquée au fichier CV.html--*/
 .structure{
-    width: 75%;
+    width: 80vw;
     position: relative;
     left: 10%;
     margin: 6% 0 0 0;
 }
 h1{
-    width: 35%;
+    width: 35vw;
+    margin-bottom: 2vw;
 }
 
 .titre2{
@@ -133,11 +123,11 @@ h1{
     border-top: .1rem solid black;
 }
 .sous-titre{
-    width: 35%;
+    width: 50vw;
     margin: 1% 0 4% 0;
 }
 h5{
-    width: 45%;
+    width: 50vw;
     margin-bottom: 0.5%;
 }
 .petitpara{
@@ -147,7 +137,8 @@ h5{
 .date1, .date2,.date3{
     position: absolute;
     top: 10%;
-    left: 87%;
+    left: 86%;
+    width:12vw ;
 }
 .date2{
     top: 25%;
@@ -162,16 +153,20 @@ h5{
 /*--La partie CSS qui sera appliquée au fichier contact.html--*/
 .container{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 55px;
-    margin: 4% 0 7% 0;
+    justify-content: space-evenly;
+    
 }
 
+.formulaire{
+    display: flex;
+    flex-wrap: wrap;
+}
 .form1{
     display: flex;
+    flex-wrap: wrap;
     gap: 10%;
+    width: 40vw;
     margin: 15% 2% 2% 2%;
 }
 
@@ -208,23 +203,34 @@ h5{
 
 /*--La quantrième parti CSS qui sera appliquée au fichier projets.htlm */
 .main{
-    margin-bottom: 5%;
-    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    margin: 0 0 5% 8%;
+    width: 84vw;
 }
 .ContenuDiv1{
+     margin-top: 5%;
+}
+
+.projet1{
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    gap: 10%;
-    margin-bottom: 8px;   
+    justify-content: space-between
 }
 .imageParfum{
     width: 350px;
-    
     margin-top: 2rem ;
 }
 
 p{
-    width: 55%;
+    width: 45vw;
+}
+
+main h1{
+    margin: 0;
+}
+
+main h4{
+    margin-bottom: 2%;
 }
 
