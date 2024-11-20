@@ -194,11 +194,11 @@ h5{
     margin-bottom: 9%;
 }
 
-#msg{
+.msg{
     height: 5rem;
 }
 
-#btn{
+.btn{
     background-color: green;
     width: 40%;
     clip-path: circle();
@@ -218,7 +218,7 @@ h5{
     gap: 10%;
     margin-bottom: 8px;   
 }
-#imageParfum{
+.imageParfum{
     width: 350px;
     
     margin-top: 2rem ;
