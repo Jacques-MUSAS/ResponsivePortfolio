@@ -9,19 +9,36 @@
   <body class="corps">
     <!-- Début de la partie header(entête )contient tous les éléments liés à la navigation -->
     <header>
-      <div class="entete-div">
-        <h2 class="entitre-titre">Jacques MUTOMB A MUSAS</h2>
+      <h2 class="entitre-titre">Jacques MUTOMB A MUSAS</h2>
+    
+    <input type="checkbox" id="deplier">
 
-        <!-- Début de la partie  nav contient tous ce qui sont liens principaux du site -->
-        <nav class="entete-nav">
-          <a href="CV.html" class="entete-cv liencv" target="_blank">CV</a>
+    <!-- Début de la partie  nav contient tout ce qui est liens principaux du site -->
+    <nav class="entete-nav">
+      
+      <label for="deplier" class="navbar-deplier">
+       
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+      </label>
+      
 
-          <a href="projets.html" class="entete-projet lienprojet">Projets</a>
+     <ul class="nav-liste">
+      <li class="nav-item">
+        <a href="CV.html" class="nav-links" target="_blank">CV</a>
+      </li>
+      <li class="nav-item">
+        <a href="projets.html" class="nav-links">Projets</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-links">Contact</a>
+      </li>
+     </ul>
 
-          <a href="contact.html" class="entete-contact liencontact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    </nav>
+  
+</header>
 
      <!-- Début de la partie main c'est la partie corps qui contient tous les contenus prinicipaux de la -->
     <main class="container">
