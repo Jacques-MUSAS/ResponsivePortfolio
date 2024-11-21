@@ -65,11 +65,11 @@ nav .navbar-deplier .bar{
     border-radius: 10rem;
 }
 
-input:checked ~ nav .nav-liste{
+header input:checked ~ nav .nav-liste{
     transform: translateY(0);
 }
 
-input{
+header input{
     display: none;
 }
 
@@ -302,6 +302,10 @@ main h4{
     height: auto;
 }
 
+.Contact a {
+    color: #000000;
+}
+
 /* L'affichage MEDIA QUERY ou MOBILE-FIRST */
 @media(max-width: 675px){
     header{
@@ -356,10 +360,12 @@ main h4{
         margin: 0;
         height: 5rem;
     }
+
     .entitre-titre{
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
     }
+
     .principal{
         margin: 0;
         margin-bottom: 2rem;
@@ -370,7 +376,7 @@ main h4{
         flex-direction: column;
         gap: 2vh;
         padding: 2vw 4vw 0 4vw;
-       }
+    }
 
     h1{
         display: block;
@@ -387,12 +393,18 @@ main h4{
     .principal-texte{
         display: flex;
         flex-direction: column;
-        
+        margin-top: 2rem;
     }
     
     .principal-texte p{
         font-size: 20px;
         text-align: justify;
+    }
+
+    main .img{
+        margin-top: 4%;
+        width: 80vw;
+        height: 90w; 
     }
 
     .button{
@@ -431,7 +443,21 @@ main h4{
         background: rgb(255, 165, 0);
     }
 
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+   .form1{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .form2{
+        display: flex;
+        flex-direction: column;
+   }
    
-    
+   
 }
 
