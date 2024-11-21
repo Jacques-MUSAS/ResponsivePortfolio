@@ -4,26 +4,79 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 2px;
 }
+
 /*--DEBUT du bloc CSS qui contient les éléments header et footer pour toutes les pages HTML--*/
-.entete-div{
+header{
     display: flex;
     justify-content: space-between;
+    padding-left: 2%;
+    height:6rem;
+    line-height:3rem;
+    background-color: #555555;
     align-items: center;
-    margin-top: 2%;
-    padding: 0  3% 0 3%;
-   
 }
-.entete-cv,.entete-projet{
-    border-right: .1rem solid black;
-    padding-right: .8rem;
-   
+
+header h2{
+    color:#fff;
+    font-weight: bold;  
 }
-.entete-nav, a{
-    list-style: none;
-    text-decoration: none;
+
+nav .nav-liste{
+    display: flex;
+}
+
+nav {
+    height:6rem;
+    line-height:3rem;
+}
+
+nav .nav-liste .nav-item{
+    cursor: pointer;
+    height: 6rem;
+    padding: 20px 30px 0 30px;
+    transition: .4s;
+}
+
+nav .nav-liste .nav-item:hover{
+    background: #e2a007;
+}
+
+nav .nav-liste .nav-links{
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .navbar-deplier{
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-deplier .bar{
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10rem;
+}
+
+input:checked ~ nav .nav-liste{
+    transform: translateY(0);
+}
+
+input{
+    display: none;
+}
+
+
+/* la partie footer */
+footer a{
     color: black;
-    font-size: 105%;
 }
 
 .pied{
@@ -73,14 +126,15 @@
 
  main .paragraphe{
     width: 100%;
-    font-size: 2.5vh;
+    font-size: 17px;
     text-align: justify;
  }
 
 .button{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center; 
+    margin-top: 2%;   
 }
 
 .button-btn1, .button-btn2,.button-btn3{
@@ -93,17 +147,20 @@
     margin: 5px; 
     font-weight: bold;
 }
-
+.button a {
+    color: black;
+}
 .button-btn1{
     text-align: center;
 }
 .button-btn2{
-    
+    padding-right: 18%;
     background: rgb(255, 217, 0);
 }
 
 .button-btn3{
-    background-color: rgb(7, 7, 248);
+    padding-right: 20%;
+    background-color: rgb(101, 101, 207);
 }
 
 /*--La partie CSS qui sera appliquée au fichier CV.html--*/
@@ -243,5 +300,138 @@ main h4{
 .msg{
     width: 120%;
     height: auto;
+}
+
+/* L'affichage MEDIA QUERY ou MOBILE-FIRST */
+@media(max-width: 675px){
+    header{
+        padding: 0 5%;
+    }
+
+/* la partie media query pour tous les fichiers */
+    nav .nav-liste{
+        display: grid;
+        position: absolute;
+        background:#555555 ;
+        width: 100%;
+        top: 99px;
+        left: 0;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: .6s;
+        opacity: 0.8;
+    }
+    
+    nav .nav-liste .nav-item{
+        padding-left: 35px;
+    }
+
+    nav .navbar-deplier{
+        display: grid !important;
+    }
+    
+    body{
+        margin: 0;
+        height: 0;
+    }
+
+/* le code qui s'applique au footer de tous les fichiers */
+    footer h4{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .pied{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer h4{
+        text-align: center;
+    }
+
+ /* cette partie du code mobile-first c'est pour le main du fichier page_d_acceuil */
+    .entete-div{
+        margin: 0;
+        height: 5rem;
+    }
+    .entitre-titre{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+    .principal{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .texte{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        padding: 2vw 4vw 0 4vw;
+       }
+
+    h1{
+        display: block;
+        text-align: center;
+        width: 80px;
+        font-size: 32px; 
+    }
+
+    h3{
+        font-size: 25px; 
+        width: 30px;
+    }
+
+    .principal-texte{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .principal-texte p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .button{
+        margin-top: 20px;
+    }
+
+    .button{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+    
+    .button-btn1, .button-btn2,.button-btn3{
+       
+        border: none;
+        color: #fff;
+        letter-spacing: 2px;
+        clip-path:none;
+        width: 100px;
+        height: 50px;
+        padding: 15px 0 0 0;
+        margin: 0; 
+        background-color: brown;
+        border-radius: 20px;
+        
+    }
+    
+    .button-btn2 {
+        padding-left: 22px ;
+        background-color: rgb(7, 241, 148);
+       
+    }
+    
+    .button-btn3{
+        padding-left: 18px ;
+        background: rgb(255, 165, 0);
+    }
+
+   
+    
 }
 
